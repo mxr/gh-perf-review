@@ -178,6 +178,8 @@ def main() -> int:
 
     print(f"# {user}'s {args.year} {args.period.upper()} summary ({args.org})")
     print()
+    print(f"_generated on {datetime.datetime.utcnow().strftime('%Y-%m-%d')}_")
+    print()
     print(f'- **{len(resp)}** PRs')
     print(f'- **{len(by_repo)}** repos')
     print()
